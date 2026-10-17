@@ -1,6 +1,6 @@
 # Battle of Spades
 
-**Current version:** Alpha 0.1.0.1
+**Current version:** Alpha 0.1.0.2
 
 **Status:** Alpha. Battle of Spades is still being made: new things arrive often, some things will change, and you may meet a bug or two. Your rank, unlocks and loadouts carry over from one version to the next.
 
