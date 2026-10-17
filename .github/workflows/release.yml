@@ -1,0 +1,44 @@
+# Publishes a Battle of Spades release whenever a new game file is pushed to release/battleofspades.html.
+# The game file carries the whole project inside it, so this rebuilds the project from it, packages the
+# desktop apps when the app itself changed since the last release, and publishes the release that the
+# desktop launcher updates from. (Made by tools/ghpush.sh in the project; kept in tools/github/.)
+name: Publish release
+on:
+  push:
+    branches: [main]
+    paths: ['release/battleofspades.html']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rebuild the project from the game file
+        run: |
+          python3 release/restore.py release/battleofspades.html build
+          mkdir -p build/launcher/icons && cp release/icons/* build/launcher/icons/
+          cd build && node tools/build.js
+          # the game must come out the same (the compressed copies of the tools and server may differ by zlib build)
+          if ! cmp -s <(grep -v 'id="bos-sources"\|id="bos-server"' dist/battleofspades.html) <(grep -v 'id="bos-sources"\|id="bos-server"' ../release/battleofspades.html); then
+            echo "::error::The rebuilt game differs from release/battleofspades.html"; exit 1
+          fi
+      - name: Cache Electron and AppImage tools
+        uses: actions/cache@v4
+        with:
+          path: |
+            build/.cache/*.zip
+            build/.cache/appimagetool-x86_64.AppImage
+            build/.cache/runtime-x86_64
+          key: bos-tools-${{ hashFiles('build/tools/package.sh') }}
+      - name: Package (when the app changed) and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: cd build && bash tools/publish.sh "${{ github.repository }}"
