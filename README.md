@@ -1,6 +1,6 @@
 # Battle of Spades
 
-**Current version:** Alpha 0.2.0.2
+**Current version:** Alpha 0.2.0.3
 
 **Status:** Alpha. Battle of Spades is still being made: new things arrive often, some things will change, and you may meet a bug or two. Your rank, unlocks and loadouts carry over from one version to the next.
 
@@ -31,6 +31,7 @@ Play on your own against bots that fight like people and dig, build and tunnel l
 - **First person:** guns modelled on the real ones, iron sights you aim down on every gun, red dots and holos you look through, the gun carried across your chest as you sprint, and your own body under you when you look down.
 - **Split screen for four:** whichever you pick up, controller or keyboard and mouse, is player 1; more players join by holding Start on another controller. Every menu works on a controller, with an on-screen keyboard for names, addresses and chat, and with the mouse and keyboard alone.
 - **Play together:** host a match for your home network, play online, or run a dedicated server for up to 64 players (32 against 32), with a window or without one (a VPS works).
+- **Adjustable interface size:** menus and text from 75% to 250% (Auto follows your screen), and the HUD on its own.
 - **A desktop app for Linux and Windows** that keeps itself up to date, or play the game file in any modern browser (WebGL 2).
 
 ## Maps
@@ -145,6 +146,8 @@ Playing alone, whichever you pick up, controller or keyboard and mouse, is playe
 | Click DEPLOY | Space or Enter | A | deploy (during the countdown: deploy as soon as it ends; again to cancel) |
 
 In the menus the keyboard works too: arrow keys move, Enter chooses, Esc goes back, Tab walks through everything. Options has toggles for sprint, aim and lean, reload when empty, auto-peek from cover and skipping the deploy screen at the start of a match.
+
+**Interface size:** Options → Interface (or the launcher's Options) makes the menus, text and buttons anything from 75% to 250%, and the HUD from 50% to 200%. Auto follows the window (bigger on a 1440p or 4K screen). In the menus, Ctrl + and Ctrl − change it and Ctrl 0 goes back to Auto.
 
 ## Source code and building
 
