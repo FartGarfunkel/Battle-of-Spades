@@ -1,6 +1,6 @@
 # Battle of Spades
 
-**Current version:** Alpha 0.2.0.3
+**Current version:** Alpha 0.2.0.4
 
 **Status:** Alpha. Battle of Spades is still being made: new things arrive often, some things will change, and you may meet a bug or two. Your rank, unlocks and loadouts carry over from one version to the next.
 
@@ -56,6 +56,7 @@ Every map plays Conquest, Team Deathmatch, Capture the Intel and Territorial Con
 | ![The deploy screen](screenshots/deploy.png)<br>**The deploy screen**: kit, guns, gadgets and where to spawn, then DEPLOY (mouse, keyboard or controller) | ![Guns modelled on the real ones](screenshots/guns.png)<br>**70 guns modelled on the real ones**, each with its own sights |
 | ![An AK-47 in your hands](screenshots/gun-ak47.png)<br>**The AK-47** in your hands | ![Sprinting](screenshots/sprint.png)<br>**Sprinting** with the gun across your chest |
 | ![Auto-peek](screenshots/peek.png)<br>**Auto-peek**: aim beside a corner to lean out, or behind a crate to rise over it | ![The on-screen keyboard](screenshots/osk.png)<br>**An on-screen keyboard** for controllers |
+| ![The grenade arc](screenshots/grenade.png)<br>**Grenades**: see where it will fly, bounce off walls and go off | ![The M320's leaf sight](screenshots/m320.png)<br>**The M320's leaf sight**: range marks out to 200 blocks |
 | ![Conquest on Caspian Border](screenshots/battlefield.png)<br>**Conquest on Caspian Border**, with your squad | ![The big map](screenshots/map.png)<br>**The big map**: flags, your squad and your team |
 | ![Wake Island](screenshots/map-wake_island.png)<br>**Wake Island** (Battlefield 3) | ![Harbor Edge](screenshots/map-harbor_edge.png)<br>**Harbor Edge** at night (BF2: Modern Combat) |
 | ![Heavy Metal](screenshots/map-heavy_metal.png)<br>**Heavy Metal** (Bad Company 2) | ![Port Valdez](screenshots/map-port_valdez.png)<br>**Port Valdez** (Bad Company 2) |
@@ -104,9 +105,10 @@ Servers use TCP port 25590 (or the next free one up to 25599), and announce them
 | C / Z | crouch (toggle) / prone (Battlefield rules; C crouches on classic rules) |
 | Ctrl or C while sprinting / Z while sprinting | slide / dive to prone (Battlefield rules) |
 | Q / E | lean left / right (Battlefield rules); aiming beside a corner or behind low cover peeks out by itself |
-| Left click | fire, hit with the spade, place a block, throw a grenade |
-| Right click | aim; dig with the spade; build a line of blocks |
-| 1 2 3 4 5 | spade, blocks, gun (press 3 again: your sidearm), grenades, your kit's gadgets (press 5 again: the second one) |
+| Left click | fire, hit with the spade, place a block, throw a grenade (hold to cook it) |
+| Right click | aim; dig with the spade; build a line of blocks; held while you throw a grenade: an underhand lob (Battlefield rules) |
+| 1 2 3 4 | spade, blocks, gun (press 3 again: your sidearm), grenades |
+| 5 / 6 | your kit's first / second gadget (Assault: M320 or M26, then the medic kit or defibrillator; 5 again also swaps) |
 | ` | last tool |
 | R | reload |
 | Arrow keys, G, middle click | choose or pick a block colour (middle click spots on Battlefield rules unless you hold blocks) |
@@ -115,6 +117,7 @@ Servers use TCP port 25590 (or the next free one up to 25599), and announce them
 | B | change class or loadout |
 | Tab / M | scoreboard / big map |
 | X | spot an enemy |
+| L | gun light or laser on / off (Battlefield rules) |
 | T / Y | chat / team chat |
 | F11 or Alt+Enter | full screen (desktop app) |
 | Esc | menu |
@@ -128,10 +131,10 @@ Servers use TCP port 25590 (or the next free one up to 25599), and announce them
 | A | jump, vault; in a vehicle: change seat |
 | B | crouch (tap), prone (hold), slide (while sprinting); in a vehicle: camera |
 | X | reload (hold: get in or out of a vehicle; with blocks out: pick a colour) |
-| Y | switch between your primary and your sidearm |
-| LB / RB | grenade / spot |
+| Y | switch between your primary and your sidearm (hold: gun light or laser on / off) |
+| LB / RB | grenade (hold to cook; with LT held: an underhand lob) / spot |
 | R3 | spade |
-| D-pad | spade, blocks, gadget, grenades (with blocks out: the colours) |
+| D-pad | ← spade, → blocks, ↑ the first gadget (↑ again: the second — medic kit, defibrillator, repair tool), ↓ grenades (with blocks out: the colours) |
 | Back / Start | scoreboard (tap: map) / menu |
 
 Playing alone, whichever you pick up, controller or keyboard and mouse, is player 1. Hold Start on another controller to join as player 2, 3 or 4. In the menus, the D-pad or stick moves, A chooses, B goes back, LB/RB and LT/RT change tabs. A on a text box opens the on-screen keyboard (A types, B deletes, X shift, Y space, LB/RB move the caret, Start done, Back cancel).
@@ -145,9 +148,15 @@ Playing alone, whichever you pick up, controller or keyboard and mouse, is playe
 | | | Y | next kit |
 | Click DEPLOY | Space or Enter | A | deploy (during the countdown: deploy as soon as it ends; again to cancel) |
 
+**Healing and reviving** (the Assault kit's second gadget, picked on the deploy screen): get it out with 6 (or D-pad ↑ twice). The **medic kit**: fire drops a medic bag in front of you that heals you and every teammate within 4 m for 25 seconds (3 bags; an ammo box or redeploying gives them back). The **defibrillator**: stand over a fallen teammate (a red cross marks them for 15 seconds), hold fire to charge the paddles, let go to shock them back to life; the longer the charge, the more health they come back with, and a full charge goes off by itself. Prompts in the middle of the screen say what to press.
+
+**Grenades** (Battlefield rules) bounce off walls, so you can bank one round a corner. With one out, a dotted arc shows where it will fly, bounce and go off (Options → Interface → Grenade arc), and a live grenade near you is marked on screen.
+
 In the menus the keyboard works too: arrow keys move, Enter chooses, Esc goes back, Tab walks through everything. Options has toggles for sprint, aim and lean, reload when empty, auto-peek from cover and skipping the deploy screen at the start of a match.
 
 **Interface size:** Options → Interface (or the launcher's Options) makes the menus, text and buttons anything from 75% to 250%, and the HUD from 50% to 200%. Auto follows the window (bigger on a 1440p or 4K screen). In the menus, Ctrl + and Ctrl − change it and Ctrl 0 goes back to Auto.
+
+**Crackling sound?** Options → Sound → Audio buffer → Stable. **Flicker on a G-Sync or FreeSync screen?** Options → Graphics → Frame rate limit, just under your screen's refresh rate.
 
 ## Source code and building
 
