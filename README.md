@@ -1,6 +1,6 @@
 # Battle of Spades
 
-**Current version:** Alpha 0.2.0.1
+**Current version:** Alpha 0.2.0.2
 
 **Status:** Alpha. Battle of Spades is still being made: new things arrive often, some things will change, and you may meet a bug or two. Your rank, unlocks and loadouts carry over from one version to the next.
 
@@ -24,11 +24,12 @@ Play on your own against bots that fight like people and dig, build and tunnel l
 - **Battlefield 3 kits and armory:** Assault, Engineer, Support and Recon; 13 assault rifles, 9 carbines, 11 LMGs, 14 sniper and marksman rifles, 9 PDWs, 6 shotguns and 8 sidearms; optics, barrels, underbarrels and ammo; two gadget slots (defibrillator, M320, M26 MASS, RPG, SMAW, AT mines, C4, ammo box, claymores, radio beacon, T-UGS, repair tool...) and a specialization.
 - **Squads and revives:** four to a squad, spawn on your squad mates, follow your leader's orders, and bring the fallen back with the defibrillator.
 - **Ranks and stats like Battlefield 3:** 45 ranks and 100 Colonel service stars, kit scores that unlock each kit's guns and gadgets, attachments unlocked by kills, ribbons and medals, a round report every round, and a full service record of every gun, kit, vehicle and map.
-- **Movement like BattleBit Remastered:** vault and mantle over walls and through windows, prone and dive to prone, slide, and lean round corners.
+- **Movement like BattleBit Remastered:** vault and mantle over walls and through windows, prone and dive to prone, slide, and lean round corners. Aim from cover and you peek out by yourself: round a corner, or up over a low wall.
 - **Bots that play like people:** they only know what they see and hear, react like a person, aim like a hand on a mouse, strafe, take cover and push, play in squads (revives, ammo, repairs, orders), and dig, build walls and bridges and tunnel under you.
 - **Sound:** 3D sound that comes from where it is (round corners, muffled behind hills, late from far away), reverb for fields, streets, rooms and tunnels, punchy Battlefield guns and explosions, an original menu theme, and ambience for every map.
-- **First person:** iron sights you aim down on every gun, red dots and holos you look through, and your own legs under you.
-- **Split screen for four:** whichever you pick up, controller or keyboard and mouse, is player 1; more players join by holding Start on another controller. Every menu works on a controller.
+- **A deploy screen like Battlefield 3:** pick your kit, guns, gadgets and where to spawn (a flag, a squad mate or a beacon on the map), then deploy, with the mouse, the keyboard or a controller.
+- **First person:** guns modelled on the real ones, iron sights you aim down on every gun, red dots and holos you look through, the gun carried across your chest as you sprint, and your own body under you when you look down.
+- **Split screen for four:** whichever you pick up, controller or keyboard and mouse, is player 1; more players join by holding Start on another controller. Every menu works on a controller, with an on-screen keyboard for names, addresses and chat, and with the mouse and keyboard alone.
 - **Play together:** host a match for your home network, play online, or run a dedicated server for up to 64 players (32 against 32), with a window or without one (a VPS works).
 - **A desktop app for Linux and Windows** that keeps itself up to date, or play the game file in any modern browser (WebGL 2).
 
@@ -51,12 +52,15 @@ Every map plays Conquest, Team Deathmatch, Capture the Intel and Territorial Con
 | | |
 |:-:|:-:|
 | ![The main menu](screenshots/menu.png)<br>**The main menu** | ![Match settings](screenshots/settings.png)<br>**Match settings**, filled in and ready: change anything or go straight in |
+| ![The deploy screen](screenshots/deploy.png)<br>**The deploy screen**: kit, guns, gadgets and where to spawn, then DEPLOY (mouse, keyboard or controller) | ![Guns modelled on the real ones](screenshots/guns.png)<br>**70 guns modelled on the real ones**, each with its own sights |
+| ![An AK-47 in your hands](screenshots/gun-ak47.png)<br>**The AK-47** in your hands | ![Sprinting](screenshots/sprint.png)<br>**Sprinting** with the gun across your chest |
+| ![Auto-peek](screenshots/peek.png)<br>**Auto-peek**: aim beside a corner to lean out, or behind a crate to rise over it | ![The on-screen keyboard](screenshots/osk.png)<br>**An on-screen keyboard** for controllers |
 | ![Conquest on Caspian Border](screenshots/battlefield.png)<br>**Conquest on Caspian Border**, with your squad | ![The big map](screenshots/map.png)<br>**The big map**: flags, your squad and your team |
 | ![Wake Island](screenshots/map-wake_island.png)<br>**Wake Island** (Battlefield 3) | ![Harbor Edge](screenshots/map-harbor_edge.png)<br>**Harbor Edge** at night (BF2: Modern Combat) |
 | ![Heavy Metal](screenshots/map-heavy_metal.png)<br>**Heavy Metal** (Bad Company 2) | ![Port Valdez](screenshots/map-port_valdez.png)<br>**Port Valdez** (Bad Company 2) |
 | ![Grand Bazaar](screenshots/map-grand_bazaar.png)<br>**Grand Bazaar** (Battlefield 3) | ![Operation Metro](screenshots/map-operation_metro.png)<br>**Operation Metro**, infantry only (Battlefield 3) |
 | ![Iron sights](screenshots/sights-irons.png)<br>**Iron sights** you really aim down | ![A red dot](screenshots/sights-reddot.png)<br>**Red dots and holos** you look through |
-| ![Your own legs](screenshots/fp-body.png)<br>**Your body in first person** | ![Prone and lean](screenshots/moves.png)<br>**BattleBit movement**: prone, lean, slide, vault |
+| ![Your own body](screenshots/fp-body.png)<br>**Your body in first person**: look down and there it is | ![Prone and lean](screenshots/moves.png)<br>**BattleBit movement**: prone, lean, slide, vault |
 | ![Team Deathmatch](screenshots/tdm-map.png)<br>**Team Deathmatch**: the combat area on Wake Island | ![Out of bounds](screenshots/tdm-oob.png)<br>**Return to the combat area** |
 | ![The armory](screenshots/armory.png)<br>**The armory**: kits, guns, attachments | ![Gadgets](screenshots/armory-gadgets.png)<br>**Gadgets and specializations** |
 | ![Service record](screenshots/profile.png)<br>**The service record** | ![Weapon stats](screenshots/profile-weapons.png)<br>**Every gun's record** and its next attachment |
@@ -98,7 +102,7 @@ Servers use TCP port 25590 (or the next free one up to 25599), and announce them
 | Space at a ledge, wall or window | vault or mantle over it or onto it (Battlefield rules) |
 | C / Z | crouch (toggle) / prone (Battlefield rules; C crouches on classic rules) |
 | Ctrl or C while sprinting / Z while sprinting | slide / dive to prone (Battlefield rules) |
-| Q / E | lean left / right (Battlefield rules) |
+| Q / E | lean left / right (Battlefield rules); aiming beside a corner or behind low cover peeks out by itself |
 | Left click | fire, hit with the spade, place a block, throw a grenade |
 | Right click | aim; dig with the spade; build a line of blocks |
 | 1 2 3 4 5 | spade, blocks, gun (press 3 again: your sidearm), grenades, your kit's gadgets (press 5 again: the second one) |
@@ -129,7 +133,18 @@ Servers use TCP port 25590 (or the next free one up to 25599), and announce them
 | D-pad | spade, blocks, gadget, grenades (with blocks out: the colours) |
 | Back / Start | scoreboard (tap: map) / menu |
 
-Playing alone, whichever you pick up, controller or keyboard and mouse, is player 1. Hold Start on another controller to join as player 2, 3 or 4. In the menus, the D-pad or stick moves, A chooses, B goes back, LB/RB and LT/RT change tabs.
+Playing alone, whichever you pick up, controller or keyboard and mouse, is player 1. Hold Start on another controller to join as player 2, 3 or 4. In the menus, the D-pad or stick moves, A chooses, B goes back, LB/RB and LT/RT change tabs. A on a text box opens the on-screen keyboard (A types, B deletes, X shift, Y space, LB/RB move the caret, Start done, Back cancel).
+
+**The deploy screen** (when you join and after every death):
+
+| Mouse | Keyboard | Controller | Action |
+| --- | --- | --- | --- |
+| Hover, click ◀ ▶ or the row, wheel | W/S or ↑ ↓, A/D or ← → | D-pad or stick | choose a row (team, kit, primary, sidearm, gadgets, spawn) and change it |
+| Click a flag, squad mate or beacon on the map | | LB / RB | where to spawn |
+| | | Y | next kit |
+| Click DEPLOY | Space or Enter | A | deploy (during the countdown: deploy as soon as it ends; again to cancel) |
+
+In the menus the keyboard works too: arrow keys move, Enter chooses, Esc goes back, Tab walks through everything. Options has toggles for sprint, aim and lean, reload when empty, auto-peek from cover and skipping the deploy screen at the start of a match.
 
 ## Source code and building
 
