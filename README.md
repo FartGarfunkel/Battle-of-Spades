@@ -12,7 +12,7 @@ Battle of Spades is Ace of Spades 0.75 brought back, then grown into a Battlefie
 
 At its heart is the classic game, rule for rule: a blocky world under pale blue fog, blue against green. Every block can be dug out with your spade or built back up in any colour, so a hill becomes a trench, a tunnel or a fort while the match is on. Fight with the Rifle, the SMG or the Shotgun, steal the enemy's intel, and hold the command posts.
 
-Then the maps get big. Conquest is fought over flags and tickets across 43 Battlefield maps up to 1,024 blocks wide, in homage to Battlefield 1942, Battlefield 2142, Battlefield 2: Modern Combat, Bad Company, Bad Company 2 and Battlefield 3, with tanks, APCs, jeeps, dune buggies, anti-air, helicopters and boats. Pick one of Battlefield 3's four kits, fight in a squad, revive your friends, rank up from Private to Colonel, and unlock 70 weapons, their attachments, gadgets and outfits as you go.
+Then the maps get big. Conquest is fought over flags and tickets across 53 Battlefield maps up to 1,024 blocks wide, in homage to Battlefield 1942, Battlefield 2142, Battlefield Heroes, Battlefield 2: Modern Combat, Bad Company, Bad Company 2 and Battlefield 3, with tanks, APCs, jeeps, dune buggies, anti-air, helicopters and boats. Pick one of Battlefield 3's four kits, fight in a squad, revive your friends, rank up from Private to Colonel, and unlock 70 weapons, their attachments, gadgets and outfits as you go.
 
 Play on your own against bots that fight like people and dig, build and tunnel like Ace of Spades players do, with up to four people on one screen, or with friends over your home network, online, or on a dedicated server for up to 64 players.
 
@@ -42,6 +42,7 @@ Play on your own against bots that fight like people and dig, build and tunnel l
 - **Battlefield maps** (512 to 1,024 blocks across), in homage to the series' favourites (their layouts are our own, built from the originals' landmarks and flags):
   - *Battlefield 1942:* **El Alamein**, **Bocage**, **Battle of the Bulge**, **Omaha Beach**, **Iwo Jima**, **Berlin**, **Gazala**, **Stalingrad**, **Midway**, **Guadalcanal**, **Kursk** and **Tobruk**.
   - *Battlefield 2142:* **Suez Canal**, **Shuhia Taiba**, **Verdun**, **Minsk**, **Port Bavaria**, **Cerbere Landing**, **Sidi Power Plant**, **Highway Tampa**, **Camp Gibraltar** and **Tunis Harbor**.
+  - *Battlefield Heroes:* **Seaside Skirmish**, **Victory Village**, **Coastal Clash**, **Riverside Rush**, **Sunset Showdown**, **Alpine Assault**, **Midnight Mayhem**, **Perilous Port**, **Buccaneer Bay** and **Lunar Landing**.
   - *Battlefield 2: Modern Combat:* **Backstab**, **A Bridge Too Far**, **Harbor Edge** (a night raid on a river port), **Little Big Eye** (climb into the giant dish) and **Russian Border**.
   - *Bad Company:* **Oasis** and **Harvest Day**.
   - *Bad Company 2:* **Arica Harbor**, **Atacama Desert**, **Valparaiso**, **Port Valdez** and **Heavy Metal**.
