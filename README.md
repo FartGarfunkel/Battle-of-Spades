@@ -12,7 +12,7 @@ Battle of Spades is Ace of Spades 0.75 brought back, then grown into a Battlefie
 
 At its heart is the classic game, rule for rule: a blocky world under pale blue fog, blue against green. Every block can be dug out with your spade or built back up in any colour, so a hill becomes a trench, a tunnel or a fort while the match is on. Fight with the Rifle, the SMG or the Shotgun, steal the enemy's intel, and hold the command posts.
 
-Then the maps get big. Conquest is fought over flags and tickets across 21 Battlefield maps up to 1,024 blocks wide, in homage to Battlefield 2: Modern Combat, Bad Company, Bad Company 2 and Battlefield 3, with tanks, APCs, jeeps, dune buggies, anti-air, helicopters and boats. Pick one of Battlefield 3's four kits, fight in a squad, revive your friends, rank up from Private to Colonel, and unlock 70 weapons, their attachments, gadgets and outfits as you go.
+Then the maps get big. Conquest is fought over flags and tickets across 21 Battlefield maps up to 1,024 blocks wide, in homage to Battlefield 2: Modern Combat, Bad Company, Bad Company 2 and Battlefield 3, with tanks, APCs, jeeps, dune buggies, anti-air, helicopters and boats. The same kind of homage covers a set of FPS maps: Call of Duty 4, Modern Warfare 2, Combat Arms, Task Force 121 and a few classics, including a canyon with this game's own Warthog, Scorpion, Ghost and Banshee. Pick one of Battlefield 3's four kits, fight in a squad, revive your friends, rank up from Private to Colonel, and unlock 70 weapons, their attachments, gadgets and outfits as you go.
 
 Play on your own against bots that fight like people and dig, build and tunnel like Ace of Spades players do, with up to four people on one screen, or with friends over your home network, online, or on a dedicated server for up to 64 players.
 
@@ -45,6 +45,12 @@ Play on your own against bots that fight like people and dig, build and tunnel l
   - *Bad Company 2:* **Arica Harbor**, **Atacama Desert**, **Valparaiso**, **Port Valdez** and **Heavy Metal**.
   - *Battlefield 3:* **Caspian Border**, **Operation Firestorm**, **Wake Island**, **Strike at Karkand**, **Grand Bazaar**, **Operation Metro** (infantry only) and **Kharg Island**.
   - *Our own:* **Harbor** and **Frostbite**.
+- **FPS homage maps** (original layouts in this game's blocky style, from publicly known lanes and landmarks, the same way the Battlefield maps are homages):
+  - *Call of Duty 4:* **Crash**, **Crossfire**, **Backlot**, **Strike**, **Showdown**, **District**, **Vacant**, **Overgrown**, **Ambush**, **Bog**, **Countdown**, **Shipment**, **Pipeline**, **Killhouse**, **Wet Work**, **Bloc** and **Chinatown**.
+  - *Modern Warfare 2:* **Rust**, **Terminal**, **Highrise**, **Favela**, **Karachi**, **Scrapyard**, **Skidrow**, **Estate** (snowmobiles), **Quarry**, **Afghan** (technicals), **Invasion**, **Sub Base**, **Derail** (snowmobiles), **Wasteland**, **Underpass** and **Rundown**.
+  - *Combat Arms:* **Death Room**, **Warehouse**, **Junk Flea**, **Two Towers**, **CA Showdown**, **Grave Digger**, **Rattlesnake** and **Snow Valley** (snowmobiles).
+  - *Task Force 121:* **Oil Rig**, **The Works**, **The Shaft**, **Pit Fight** and **Withering Heights**.
+  - *Classics:* **Dust II**, **Inferno**, **Office**, **Nuke**, **Mirage**, **Blood Gulch** (Warthog, Scorpion, Ghost, Banshee), **Lockout**, **Facility**, **Nuketown**, **2Fort** and **Facing Worlds**.
 
 Every map plays Conquest, Team Deathmatch, Capture the Intel and Territorial Control.
 
