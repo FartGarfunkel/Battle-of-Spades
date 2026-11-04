@@ -27210,7 +27210,12 @@ class Menus {
   // ---- focus and controllers ----
   focusables() { return this.cur ? [...this.cur.el.querySelectorAll('button:not([disabled]), .opt, .tile, input[type=text], input[type=range]')].filter(e => e.offsetParent !== null && !e.closest('.cyc')) : []; }
   focused() { const f = this.focusables(); return f.find(e => e.classList.contains('focus')) || null; }
-  focusFirst() { const f = this.focusables(); const p = f.find(e => e.classList.contains('primary')) || f[0]; this.setFocus(p); }
+  focusFirst() {
+    const f = this.focusables();
+    // the lobby is taller than the window: land on the roster, not the Start button, so the room is what you see
+    const p = (this.cur && this.cur.name === 'lobby') ? f[0] : (f.find(e => e.classList.contains('primary')) || f[0]);
+    this.setFocus(p);
+  }
   setFocus(el) { for (const e of this.focusables()) e.classList.remove('focus'); if (el) { el.classList.add('focus'); if (el.focus && el.tagName !== 'DIV') el.focus({ preventScroll: true }); el.scrollIntoView && el.scrollIntoView({ block: 'nearest' }); } }
   nav(dx, dy) {
     const f = this.focusables(); if (!f.length) return;
