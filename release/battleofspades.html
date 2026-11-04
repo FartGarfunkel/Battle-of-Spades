@@ -23416,8 +23416,9 @@ function gadInstallClient() {
     if (!GAD_HELD[id]) return _gdDrawHeld.call(this, r, s, M, fp);
     if (s.vehicle) { const st = s.vehicle.def.seats[s.seat]; if (!st || !st.personal) return; }
     const w = this.world, t = w.time, g = s.gadget._real || s.gadget;
-    if (id === 'smaw') { const M2 = M4.copy(M); if (!fp) M4.translate(M2, -0.22, 0.02, -0.06); r.drawModel(gadHeldModel(r, 'smaw'), M2); return; }
+    if (id === 'smaw') { const M2 = M4.copy(M); if (!fp) M4.translate(M2, -0.22, 0.02, -0.06); s._gripM = M2; r.drawModel(gadHeldModel(r, 'smaw'), M2); return; }
     if (id === 'm26') {
+      s._gripM = M;
       r.drawModel(gunModel(r, s.weapon.s.id, s.weapon.s.att), M);
       const M2 = M4.copy(M); M4.translate(M2, 0.3, 0, 0.12); r.drawModel(gadHeldModel(r, 'm26'), M2);
       return;
@@ -23430,12 +23431,13 @@ function gadInstallClient() {
       if (fp) { M4.translate(M2, 0.16, 0.12, 0.02); M4.rotZ(M2, 0.12); M4.rotY(M2, -0.45 + 0.3 * k); M4.scale(M2, 0.85); }   // low in front, the pads tipped forward
       else if (k > 0) M4.rotY(M2, -0.25 * k);
       const flash = shock ? [0.75, 0.9, 1, 0.85] : k > 0 ? [0.55, 0.75, 1, 0.15 + 0.45 * k * (0.75 + 0.25 * Math.sin(t * 60))] : null;
+      s._gripM = M2;
       r.drawModel(gadHeldModel(r, 'defib', fp ? apart + 6 : apart), M2, null, flash);
       if (k > 0.2 && this.fx && rand() < k * 0.5) { const p = gadMatPoint(M2, 0.22, -apart * GV * 0.5, 0); this.fx.sprite(p.x, p.y, p.z, 0.04 + rand() * 0.05 * (fp ? 0.4 : 1), 0.6, 0.8, 1, 0.9, 0.06, true, 0.5); }
       return;
     }
     // things to put down, held in front (lower and a little smaller in your own hands)
-    if (fp) { const M2 = M4.copy(M); M4.translate(M2, 0.04, 0.04, 0.1); M4.scale(M2, 0.8); r.drawModel(gadHeldModel(r, id), M2); return; }
+    if (fp) { const M2 = M4.copy(M); M4.translate(M2, 0.04, 0.04, 0.1); M4.scale(M2, 0.8); s._gripM = M2; r.drawModel(gadHeldModel(r, id), M2); return; }
     r.drawModel(gadHeldModel(r, id), M);
   };
   function gadMatPoint(M, x, y, z) { return { x: M[0] * x + M[4] * y + M[8] * z + M[12], y: M[1] * x + M[5] * y + M[9] * z + M[13], z: M[2] * x + M[6] * y + M[10] * z + M[14] }; }
@@ -23907,6 +23909,7 @@ function attInstallClient() {
       const r0 = g.reloadFrom ?? (g.reloadAt ? g.reloadAt - ((GADGETS[id] || {}).reload || 2) : 0);
       if (!fp && g.reloadAt && t >= r0 && t < g.reloadAt) { M2 = M4.copy(M); M4.rotX(M2, Math.sin(clamp((t - r0) / Math.max(0.1, g.reloadAt - r0), 0, 1) * Math.PI) * 0.55); }
       drawUglHeld(r, s, M2, fp, id);
+      s._gripM = M2;
       return;
     }
     const out = _atDrawHeld.call(this, r, s, M, fp);
