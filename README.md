@@ -1,6 +1,6 @@
 # Battle of Spades
 
-**Current version:** Alpha 0.2.0.4
+**Current version:** Alpha 0.2.1
 
 **Status:** Alpha. Battle of Spades is still being made: new things arrive often, some things will change, and you may meet a bug or two. Your rank, unlocks and loadouts carry over from one version to the next.
 
@@ -12,14 +12,14 @@ Battle of Spades is Ace of Spades 0.75 brought back, then grown into a Battlefie
 
 At its heart is the classic game, rule for rule: a blocky world under pale blue fog, blue against green. Every block can be dug out with your spade or built back up in any colour, so a hill becomes a trench, a tunnel or a fort while the match is on. Fight with the Rifle, the SMG or the Shotgun, steal the enemy's intel, and hold the command posts.
 
-Then the maps get big. Conquest is fought over flags and tickets across 21 Battlefield maps up to 1,024 blocks wide, in homage to Battlefield 2: Modern Combat, Bad Company, Bad Company 2 and Battlefield 3, with tanks, APCs, jeeps, dune buggies, anti-air, helicopters and boats. Pick one of Battlefield 3's four kits, fight in a squad, revive your friends, rank up from Private to Colonel, and unlock 70 weapons, their attachments, gadgets and outfits as you go.
+Then the maps get big. Conquest is fought over flags and tickets across 73 Battlefield maps up to 1,024 blocks wide, in homage to Battlefield 1942, Battlefield 2142, Battlefield Heroes, Battlefield Play4Free, Hidden & Dangerous, Battlefield 2: Modern Combat, Bad Company, Bad Company 2 and Battlefield 3, with tanks, APCs, jeeps, dune buggies, anti-air, helicopters and boats. The same kind of homage covers 57 FPS maps: Call of Duty 4, Modern Warfare 2, Combat Arms, Task Force 121 and a few classics, including a canyon with this game's own Warthog, Scorpion, Ghost and Banshee. Pick one of Battlefield 3's four kits, or the guns, gear and vehicles of the map's era, fight in a squad, revive your friends, rank up from Private to Colonel, and unlock weapons, their attachments, gadgets and outfits as you go.
 
 Play on your own against bots that fight like people and dig, build and tunnel like Ace of Spades players do, with up to four people on one screen, or with friends over your home network, online, or on a dedicated server for up to 64 players.
 
 ## Features
 
 - **Classic Ace of Spades:** the 0.75/0.76 rules, ported from OpenSpades: digging, building with the colour palette, Rifle, SMG, Shotgun and grenades, Capture the Intel and Territorial Control, classic generated maps and any `.vxl` map.
-- **Conquest:** Battlefield battles on big maps, with flags, tickets and Battlefield-sized motor pools: tanks, APCs, jeeps, the BF2: Modern Combat dune buggies, anti-air, attack and transport helicopters, and boats.
+- **Conquest:** Battlefield battles on big maps, with flags, tickets (up to 8000) and Battlefield-sized motor pools: tanks, APCs, jeeps, the BF2: Modern Combat dune buggies, anti-air, attack and transport helicopters, and boats, plus the machines of each era and the FPS maps' warthog, scorpion, ghost, banshee, snowmobile and technical.
 - **Team Deathmatch:** infantry only, first to 100 kills, fought in a combat area in the middle of the big maps (or across the whole of a classic map).
 - **Battlefield 3 kits and armory:** Assault, Engineer, Support and Recon; 13 assault rifles, 9 carbines, 11 LMGs, 14 sniper and marksman rifles, 9 PDWs, 6 shotguns and 8 sidearms; optics, barrels, underbarrels and ammo; two gadget slots (defibrillator, M320, M26 MASS, RPG, SMAW, AT mines, C4, ammo box, claymores, radio beacon, T-UGS, repair tool...) and a specialization.
 - **Squads and revives:** four to a squad, spawn on your squad mates, follow your leader's orders, and bring the fallen back with the defibrillator.
@@ -28,8 +28,9 @@ Play on your own against bots that fight like people and dig, build and tunnel l
 - **Bots that play like people:** they only know what they see and hear, react like a person, aim like a hand on a mouse, strafe, take cover and push, play in squads (revives, ammo, repairs, orders), and dig, build walls and bridges and tunnel under you.
 - **Sound:** 3D sound that comes from where it is (round corners, muffled behind hills, late from far away), reverb for fields, streets, rooms and tunnels, punchy Battlefield guns and explosions, an original menu theme, and ambience for every map.
 - **A deploy screen like Battlefield 3:** pick your kit, guns, gadgets and where to spawn (a flag, a squad mate or a beacon on the map), then deploy, with the mouse, the keyboard or a controller.
-- **First person:** guns modelled on the real ones, iron sights you aim down on every gun, red dots and holos you look through, the gun carried across your chest as you sprint, and your own body under you when you look down.
+- **First person:** guns modelled on the real ones, iron sights you aim down on every gun, red dots and holos you look through, the gun carried across your chest as you sprint, hands and arms that follow each gun, tool and gadget in first and third person, and your own body under you when you look down.
 - **Split screen for four:** whichever you pick up, controller or keyboard and mouse, is player 1; more players join by holding Start on another controller. Every menu works on a controller, with an on-screen keyboard for names, addresses and chat, and with the mouse and keyboard alone.
+- **A lobby:** solo, split-screen and hosted matches wait in a lobby, with a top-down map preview, and a finished battle comes back to that lobby. The menu camera keeps circling over a random map (the old backdrop is still a choice).
 - **Play together:** host a match for your home network, play online, or run a dedicated server for up to 64 players (32 against 32), with a window or without one (a VPS works).
 - **Adjustable interface size:** menus and text from 75% to 250% (Auto follows your screen), and the HUD on its own.
 - **A desktop app for Linux and Windows** that keeps itself up to date, or play the game file in any modern browser (WebGL 2).
@@ -39,12 +40,23 @@ Play on your own against bots that fight like people and dig, build and tunnel l
 - **Classic maps** (512 × 512, Blue against Green): Classicgen, the original Ace of Spades generator, plus Hallway, Island, Mesa, Trenches and Arena.
 - **Random maps:** a new Classicgen, Hills, Islands or City map from any seed, every match if you like.
 - **Community maps:** twenty classic maps made by the Ace of Spades community (from [aos-server-mods](https://github.com/1AmYF/aos-server-mods) and [SpadesX](https://github.com/SpadesX/SpadesX)), downloaded the first time you play them and kept. Any `.vxl` map of your own works too.
-- **Battlefield maps** (512 to 1,024 blocks across), in homage to the series' favourites (their layouts are our own, built from the originals' landmarks and flags):
+- **Battlefield maps** (512 to 1,024 blocks across), in homage to the series' favourites (their layouts are our own, built from the originals' landmarks and flags). A historic map opts into that era's arsenal with `map.meta.era`:
+  - *Battlefield 1942:* **El Alamein**, **Bocage**, **Battle of the Bulge**, **Omaha Beach**, **Iwo Jima**, **Berlin**, **Gazala**, **Stalingrad**, **Midway**, **Guadalcanal**, **Kursk** and **Tobruk**.
+  - *Battlefield 2142:* **Suez Canal**, **Shuhia Taiba**, **Verdun**, **Minsk**, **Port Bavaria**, **Cerbere Landing**, **Sidi Power Plant**, **Highway Tampa**, **Camp Gibraltar** and **Tunis Harbor**.
+  - *Battlefield Heroes:* **Seaside Skirmish**, **Victory Village**, **Coastal Clash**, **Riverside Rush**, **Sunset Showdown**, **Alpine Assault**, **Midnight Mayhem**, **Perilous Port**, **Buccaneer Bay** and **Lunar Landing**.
+  - *Battlefield Play4Free:* **Basra**, **Dalian Plant**, **Dragon Valley**, **Gulf of Oman**, **Sharqi Peninsula**, **Kubra Dam**, **Mashtuur City**, **Road to Jalalabad**, **Zatar Wetlands** and **Daqing Oilfields**.
+  - *Hidden & Dangerous:* **Flying Fortress**, **The Bridge**, **The Prison**, **U-Boat Pens**, **Fjord Raid**, **The Chateau**, **Desert Depot**, **The Works**, **Night Express** and **Sicilian Docks**.
   - *Battlefield 2: Modern Combat:* **Backstab**, **A Bridge Too Far**, **Harbor Edge** (a night raid on a river port), **Little Big Eye** (climb into the giant dish) and **Russian Border**.
   - *Bad Company:* **Oasis** and **Harvest Day**.
   - *Bad Company 2:* **Arica Harbor**, **Atacama Desert**, **Valparaiso**, **Port Valdez** and **Heavy Metal**.
   - *Battlefield 3:* **Caspian Border**, **Operation Firestorm**, **Wake Island**, **Strike at Karkand**, **Grand Bazaar**, **Operation Metro** (infantry only) and **Kharg Island**.
   - *Our own:* **Harbor** and **Frostbite**.
+- **FPS homage maps** (original layouts in this game's blocky style, from publicly known lanes and landmarks, the same way the Battlefield maps are homages):
+  - *Call of Duty 4:* **Crash**, **Crossfire**, **Backlot**, **Strike**, **Showdown**, **District**, **Vacant**, **Overgrown**, **Ambush**, **Bog**, **Countdown**, **Shipment**, **Pipeline**, **Killhouse**, **Wet Work**, **Bloc** and **Chinatown**.
+  - *Modern Warfare 2:* **Rust**, **Terminal**, **Highrise**, **Favela**, **Karachi**, **Scrapyard**, **Skidrow**, **Estate** (snowmobiles), **Quarry**, **Afghan** (technicals), **Invasion**, **Sub Base**, **Derail** (snowmobiles), **Wasteland**, **Underpass** and **Rundown**.
+  - *Combat Arms:* **Death Room**, **Warehouse**, **Junk Flea**, **Two Towers**, **CA Showdown**, **Grave Digger**, **Rattlesnake** and **Snow Valley** (snowmobiles).
+  - *Task Force 121:* **Oil Rig**, **The Works**, **The Shaft**, **Pit Fight** and **Withering Heights**.
+  - *Classics:* **Dust II**, **Inferno**, **Office**, **Nuke**, **Mirage**, **Blood Gulch** (Warthog, Scorpion, Ghost, Banshee), **Lockout**, **Facility**, **Nuketown**, **2Fort** and **Facing Worlds**.
 
 Every map plays Conquest, Team Deathmatch, Capture the Intel and Territorial Control.
 
